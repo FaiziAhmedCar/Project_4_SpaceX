@@ -245,6 +245,7 @@ footer{
 }
 footer ul{
     display: flex;
+    flex-direction:row;
     justify-content:space-around;
     align-items: center;
     flex-wrap: wrap;
@@ -261,4 +262,57 @@ footer ul li a{
 footer li a:hover{
     color:#aaa;
 
+}
+/* Media Queries */
+/* For mobile */
+@media(max-width: 767px){   
+    /* hide desktop menu */
+    .desktop-main-menue{
+        display: none;
+    }
+    /* logo */
+    .logo{
+        position: absolute;
+        right: 25%;
+        left: 40%;
+        top: 32%;
+        width: 150px;
+        height: auto;
+
+    }
+    footer{
+        padding: 10px 0px;
+    }
+    footer ul{
+        position: absolute;
+        right: 10%;
+        left: 17%;
+        max-width: 270px;
+    }
+}
+/* For tablet */
+@media(min-width: 768px) and (max-width: 1024px){
+        /* hide desktop menu */
+        .desktop-main-menue{
+            display: none;
+        }
+        /* logo */
+        .logo{
+            position: absolute;
+            right: 25%;
+            left: 40%;
+            top: 32%;
+            width: 150px;
+            height: auto;
+    
+        }
+        footer{
+            padding: 10px 0px;
+        }
+    footer ul{
+        position: absolute;
+        right: 30%;
+        left: 35%;
+        max-width: 270px;
+    }
 }
